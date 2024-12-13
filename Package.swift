@@ -15,7 +15,7 @@ let package = Package(
     .package(url: "https://github.com/vapor/fluent-postgres-driver.git", from: "2.8.0"),
     // 🔵 Non-blocking, event-driven networking for Swift. Used for custom executors
     .package(url: "https://github.com/apple/swift-nio.git", from: "2.65.0"),
-    .package(url: "https://github.com/swiftlang/swift-testing.git", from: "6.0.0"),
+//    .package(url: "https://github.com/swiftlang/swift-testing.git", from: "6.0.0"),
   ],
   targets: [
     .executableTarget(
@@ -34,7 +34,7 @@ let package = Package(
       dependencies: [
         .target(name: "App"),
         .product(name: "XCTVapor", package: "vapor"),
-        .product(name: "Testing", package: "swift-testing"),
+//        .product(name: "Testing", package: "swift-testing"),
       ],
       swiftSettings: swiftSettings
     ),
